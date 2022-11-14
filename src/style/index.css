@@ -1,0 +1,1529 @@
+.main{
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+
+} 
+
+.main[data-visible='false']{
+    background: rgba(64, 64, 64, 0.3);
+
+}
+
+    body{
+        margin: 0;
+        overflow-x: hidden; 
+
+    }
+
+#root{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+
+}
+header nav{
+    margin-top: 55px;
+    display: flex;
+    justify-content:center;
+    margin-bottom:125px ;
+    gap: 6.25em;
+}
+header nav .menu-hide{
+    display: none;
+}
+header nav .menu{
+    display: none;
+}
+header nav .menu-close{
+    display: none;
+}
+header nav .menu-close-hide{
+    display: none;
+}
+header nav .nav-link-default{
+    display: flex;
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+    gap:48px ;
+    padding: 0;
+    padding-left:5%;
+    padding-right: 11.56em;
+}
+header nav ul li{
+    color: #434343;
+    height: 25px;
+    font-family: 'Red Rose';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    cursor: pointer;
+    
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #434343;
+
+}
+header nav ul li a:hover{
+   color: #A02279;
+    
+}
+  header nav ul .home{
+    width: 57px;
+
+}
+header nav ul .pts{
+    width: 125px;
+
+}
+header nav ul .nftlink{
+    width: 52px;
+
+}
+header nav ul .comm{
+    width: 111px;
+}  
+header nav button{
+    background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+    border-radius: 10px;
+    border: none;
+    font-family: 'Red Rose';
+    width: 220px;
+    height: 48px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    gap: 10px;
+}
+header nav button span{
+    
+    font-family: 'Red Rose';
+    width: 117px;
+    height: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    gap: 10px;
+}
+header nav button:hover{
+    cursor: pointer;
+    color: #A02279;
+    background: white;
+    border: 1px solid #A02279;
+}
+header nav button:hover span{
+    color: #A02279;
+    
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+header .connect-wallet[data-visible="false"]{
+   display: none;
+}
+header .connect-wallet[data-visible='true']{
+    display: block;
+    position: fixed;
+    background-color: white;
+    z-index: 1000000;
+    top: 370px;
+    bottom: 30%;
+    right: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    filter: drop-shadow(2px 4px 100vw black);
+}
+
+header .connect-wallet .cw{
+    background-color: white;
+    width: 35vw;
+    max-width: 600px;
+
+    height: unset;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+}
+header .connect-wallet .cw .top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px 32px;
+    border-bottom: 1px solid #CFD8DC;
+}
+header .connect-wallet .cw .top span{
+    font-family: 'Red Rose';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #333333;
+}
+header .connect-wallet .cw  svg{
+    cursor: pointer;
+}
+header .connect-wallet .cw .body{
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    gap: 16px;
+}
+header .connect-wallet .cw .body span{
+    font-family: 'Red Rose';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+
+color: #333333;
+
+}
+
+/* wallet css */
+header .connect-wallet .cw .body .metamask{
+    border: 1px solid #CFD8DC;
+border-radius: 12px;
+    display: flex;
+    padding: 12px 20px;
+    gap: 20%;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+header .connect-wallet .cw .body .walletconnect{
+    border: 1px solid #CFD8DC;
+border-radius: 12px;
+    display: flex;
+    padding: 12px 20px;
+    gap: 9%;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-bottom: 32px;
+
+}
+header .connect-wallet .cw .body .walletconnect:hover{
+    background: #F8F9FA;
+
+}
+header .connect-wallet .cw .body .metamask:hover{
+    background: #F8F9FA;
+
+}
+
+/* name css */
+header .connect-wallet .cw .body .metamask .walletname{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+header .connect-wallet .cw .body .metamask .walletname b{
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    color: #000000;
+}
+
+header .connect-wallet .cw .body .walletconnect .walletname{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+
+}
+header .connect-wallet .cw .body .walletconnect .walletname b{
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    color: #000000;
+}
+
+/* icon css */
+header .connect-wallet .cw .body .metamask .walletname .metamask-icon{
+    width: 44px;
+}
+header .connect-wallet .cw .body .walletconnect .walletname .walletconnect-icon{
+    width: 40px;
+}
+
+.hero .hero-top .mobile-hero-img{
+    display: none;
+}
+
+.hero .hero-top{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 459px;
+    margin-bottom: 67px;
+    gap: 100px;
+
+
+}
+.hero .hero-top .hero-txt{
+    display: flex;
+    flex-direction: column;
+    height: 400.08px;
+    align-items: flex-start;
+    gap: 48px;
+
+}
+.hero .hero-top .hero-txt h1{
+    color: #434343;
+    letter-spacing: -0.02em;
+    font-family: 'Red Rose';
+    font-style: normal;
+    width: 646px;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 140%;
+    padding: 0;
+    margin: 0;
+}
+.hero .hero-top .hero-img{
+    width: 476px;
+height: 459px;
+
+}
+.hero .hero-top .hero-txt h1 span{
+    color:rgba(160, 34, 121, 1);
+}
+.hero .hero-top .hero-txt p{
+    padding: 0;
+    margin: 0;
+    font-family: 'Red Rose';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    color: #434343;
+    width: 636px;
+    height: 102px;
+ 
+
+
+
+}
+.hero .hero-top .search input{
+    Width:390px;
+    height: 54px;
+    padding-left: 1em;
+background: rgba(247, 247, 247, 0.1);
+border: 1px solid #A3A3A3;
+border-radius: 8px 0px 0px 8px;
+}
+.hero .hero-top .search button{
+    background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.46%);
+    border-radius: 0px 8px 8px 0px;
+    border: none;
+    width: 230px;
+    height: 54px;
+    color: white;
+}
+.hero .hero-top .search button:hover{
+    cursor: pointer;
+    background: linear-gradient(90deg, #A02279, #A02279);
+   
+}
+.hero .hero-bottom{
+    background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 264px;
+}
+.hero .hero-bottom .mbt-image{
+    width: 222px;
+    height: 50px;
+}
+.hero .hero-bottom .metamask-img{
+    width: 214.14px;
+    height: 37.56px;
+}
+.hero .hero-bottom .opensea-img{
+    width: 198.32px;
+    height: 40.79px;
+
+}
+.nft-section{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.nft-section h2{
+    text-align: center;
+    font-family: 'Red Rose';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    color: #000000;
+}
+.nft-section .nft {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    max-width: 1440px
+}
+.nft-section .nft .card{
+    display: flex;
+    justify-content: center;
+    width: 292px;
+    height: 372px;
+    position: relative;
+}
+.nft-section .nft .nft-card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);
+    border: 1px solid #D7D7D7;
+    border-radius: 15px;
+    padding: 16px;
+    cursor:pointer;
+
+    
+
+    
+}
+
+    .nft-section .nft .nft-card .image img{
+        width: 260px;
+        height: 265px;
+        border-radius: 15px;
+    }
+    .nft-section .nft .nft-card .image{
+        position: relative;
+    }
+    .nft-section .nft .nft-card .image .heart{
+        position: absolute;
+        top: 8px;
+        right:8px;
+        
+    }
+    .nft-section .nft .nft-card .image .heart-active{
+        position: absolute;
+        top: 8px;
+        right: 8px;
+    }
+    .nft-section .nft .nft-card .image .heart-active  path{
+            fill: rgb(213, 22, 45);
+            stroke: none;
+    }
+    .nft-section .nft .nft-card .card-txt{
+        display: flex;
+        justify-content: space-between;
+        gap: 2px;
+        padding-top: 16px;
+        color: #434343;
+    }
+
+    .nft-section .nft .nft-card .card-txt .left-txt{
+        text-align: left;
+        font-family: 'Red Rose';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 13px;
+        color: #434343;
+
+        
+    }
+    .nft-section .nft .nft-card .card-txt p{
+        margin-bottom: 8px;
+    }
+    .nft-section .nft .nft-card .card-txt .right-txt h3{
+        margin: 0;
+        font-weight:700 ;
+    }
+    .nft-section .nft .nft-card .card-txt .right-txt{
+        text-align: right;
+        font-family: 'Red Rose';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 13px;
+        color: #434343;
+
+
+    }
+    .nft-section .nft .nft-card .rating{
+        padding: 0;
+    }
+    /* nft list place to stay top nav */
+        .nft-list-section .list-body .filter-nav{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 73px;
+        }
+        .nft-list-section .list-body .filter-nav ul{
+            
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            list-style: none;
+            gap: 48px;
+            margin-right: 65px;
+            padding-left: 0;
+        }
+        .nft-list-section .list-body .filter-nav ul li a{
+            font-family: 'Red Rose';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 25px;
+            color: #434343;
+            text-decoration: none;
+        }
+        .nft-list-section .list-body .filter-nav ul li a:hover{
+            color: #A02279;
+        }
+        .nft-list-section .list-body .filter-nav .location span{
+            font-family: 'Red Rose';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #333333;
+        }
+        .nft-list-section .list-body .filter-nav .location{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 161px;
+            height: 48px;
+            border: 1px solid #B4B4B4;
+            border-radius: 8px;
+        }
+
+
+
+    /* nft list place to stay top nav */
+
+    /* nft list place to stay */
+    .nft-list-section {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 96px;
+        padding: 32px;
+    }
+
+    .nft-list-section .list-body{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: flex-start;
+        /* max-block-size: fit-content; */
+        max-width: 1240px;
+    }
+    .nft-list-section .list-body .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+        max-width: 1440px
+    }
+    .nft-list-section .list-body .cards .card{
+        display: flex;
+        justify-content: center;
+        width: 292px;
+        height: 372px;
+        position: relative;
+    }
+    .nft-list-section .list-body .cards .nft-card{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);
+        border: 1px solid #D7D7D7;
+        border-radius: 15px;
+        padding: 16px;
+        cursor:pointer;
+        
+    }
+    .nft-list-section .list-body .cards .card{
+        display: flex;
+        justify-content: center;
+        width: 292px;
+        height: 372px;
+        position: relative;
+    }
+    .nft-list-section .list-body   .cards .card .nft-card .image{
+        position: relative;
+
+    }
+    .nft-list-section .list-body   .cards .card .nft-card .image img{
+        position: relative;
+        width: 260px;
+        height: 265px;
+        border-radius: 15px;
+    }
+    .nft-list-section .list-body .cards .nft-card .card-txt{
+        display: flex;
+        justify-content: space-between;
+        gap: 2px;
+        padding-top: 16px;
+        color: #434343;
+    }
+
+    .nft-list-section .list-body .cards .nft-card .card-txt .left-txt{
+        text-align: left;
+        font-family: 'Red Rose';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 13px;
+        color: #434343;
+
+        
+    }
+    .nft-list-section .list-body .cards .nft-card .card-txt p{
+        margin-bottom: 8px;
+    }
+    .nft-list-section .list-body .cards .nft-card .card-txt .right-txt h3{
+        margin: 0;
+        font-weight:700 ;
+    }
+    .nft-list-section .list-body .cards .nft-card .card-txt .right-txt{
+        text-align: right;
+        font-family: 'Red Rose';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 13px;
+        color: #434343;
+
+
+    }
+    .nft-list-section .list-body .cards .nft-card .image .heart{
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 8px;
+        right:8px;
+        
+    }
+    .nft-list-section .list-body .cards .nft-card .image .heart-active{
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        top: 8px;
+        right: 8px;
+    }
+    .nft-list-section .list-body .cards .nft-card .image .heart-active  path{
+        width: 24px;
+        height: 24px;
+            fill: rgb(213, 22, 45);
+            stroke: none;
+    }
+
+    /* nft list place to stay */
+
+#learn-more-section{
+    overflow-x: hidden;
+    margin-top: 60px;
+     background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+     display: flex;
+     flex-direction: row-reverse;
+     justify-content: center;
+     align-items: center;
+     gap: 46%;
+     height: 774px;
+     position: relative;
+
+}
+#learn-more-section .txt{
+    margin-top: -15em;
+    margin-left: -5em;
+    text-align: left;
+    position: relative;
+    z-index: 1000;
+}
+#learn-more-section .txt button{
+    width: 156px;
+    height: 48px;
+    background: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);
+    border-radius: 8px;
+    color:   #A02279;
+    
+    text-align: center;
+    font-family: 'Red Rose';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+
+}
+#learn-more-section .txt button:hover{
+    border: 1px solid white;
+    background: #A02279;
+    color: white;
+
+}
+#learn-more-section .txt  h4{
+    width: 346px;
+   font-family: 'Red Rose';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 35px;
+    background: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+#learn-more-section .txt p{
+    margin-top: 0;
+    text-align: left;
+    font-family: 'Red Rose';
+    width: 415px;
+    height: 136px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 35px;
+    background: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+}
+
+#learn-more-section .intersecting-img{
+    position: relative;
+
+    
+}
+#learn-more-section .intersecting-img .im1{
+    position: absolute;
+    transform: rotate(-8.76deg);
+    bottom: -20em;
+    right: -13em;
+    top: -2.7em;
+
+    border-radius: 10px;
+    width: 378.2px;
+    height: 253.89px;
+    z-index: 1000;
+    margin-right: 30.53px;
+
+
+}
+#learn-more-section .intersecting-img .im2{
+    position: absolute;
+    transform: rotate(-26.02deg);
+    right: 8em;
+    top: -3.5em;
+    bottom: -20em;
+    width: 378.2px;
+    height: 258.89px;
+    border-radius: 10px;
+    z-index: 500;
+}
+#learn-more-section .intersecting-img .im3{
+    position: absolute;
+    width: 378.21px;
+    height: 253.89px;
+        top: -15em;
+    right: -7em;
+    border-radius: 10px;
+    z-index: 10;
+    transform: rotate(17.76deg);
+}
+ footer{
+    padding: 32px;
+    background: #1D1D1E;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 20em 20em 20em;
+    align-items: center;
+    justify-items: center;
+ }
+ footer .column1{
+    margin-bottom: 37px;
+ }
+ footer .column1 .social-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    margin-bottom: 55px;
+ }
+ footer .column1 .social-icons a svg:hover path{
+   fill: #A02279;
+ }
+ footer .column1 .footer-logo{
+    margin-top: 58px;
+    margin-bottom: 96px;
+ }
+
+ footer .column1 span{
+    font-family: 'Red Rose';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #F7F7F7;
+ }
+ footer ul{
+    list-style: none;
+    padding: 0;
+ }
+ footer  h5{
+    font-family: 'Red Rose';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 23px;
+ }
+
+ footer ul li{
+    font-family: 'Red Rose';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 32px;
+    color: #F1F3F9;
+    cursor: pointer;
+ }
+
+ footer ul li:hover{
+    color: #A02279;
+ }
+
+ /* tablet screen */
+ @media screen and (max-width: 1250px){
+    header nav{
+        margin-top: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        padding: 1em 2.5em 0 2em;
+        margin-bottom: 15px;
+
+    }
+    header nav .logo #logo{
+        width: 80%;
+    }
+    header nav .menu{
+        display: block;
+        width: 1.5em;
+        cursor: pointer;
+    }
+    
+    header nav .menu:hover path{
+        fill: #A02279;
+    }
+    header nav .menu-close{
+        display: block;
+        cursor: pointer;
+        position: fixed;
+        right: 0;
+        padding-right: 1.9em;
+        width: 1.5em;
+        z-index: 100000000;
+    }
+    header nav .menu-close-hide{
+        display: none;
+        
+    }
+    header nav svg:hover path{
+        fill:#A02279;
+    }
+    header nav .nav-link-default{
+        visibility: hidden;
+        position: fixed;
+        transform: translateX(100%);
+        flex-direction: column;
+        z-index: 1000000;
+        padding: 55px  25px 0  30px;
+        top: 0;
+        right: 0;
+        background-color: #ffffff;
+        box-shadow: 1px 1px 1px 1px gray;
+        width: 40vw;
+        height: 100vh;
+        transition: transform 350ms ease-in-out, visibility 350ms ease-in;
+
+    }
+    header nav .nav-link-default[data-visible='true']{
+        visibility: visible;
+
+        transform: translateX(0%);
+       ;
+    }
+    header nav ul{
+        
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        gap:48px ;
+        padding: 0;
+        padding-left:0 ;
+        padding-right: 0px;
+        padding-bottom: 1em;
+    }
+    header nav ul li{
+        color: #434343;
+        height: 25px;
+        
+        font-family: 'Red Rose';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        cursor: pointer;
+        
+    }
+    header nav ul li a{
+        
+        text-decoration: none;
+        color: #434343;
+    
+    }
+    header nav ul li a:hover{
+       color: #A02279;
+        
+    }
+      header nav ul .home{
+        width: 57px;
+    
+    }
+    header nav ul .pts{
+        width: 125px;
+    
+    }
+    header nav ul .nftlink{
+        width: 52px;
+    
+    }
+    header nav ul .comm{
+        width: 111px;
+    }  
+    header nav button{
+        background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+        border-radius: 10px;
+        border: none;
+        font-family: 'Red Rose';
+        width: 175px;
+        height: 48px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: white;
+        gap: 10px;
+    }
+    header nav button:hover{
+        cursor: pointer;
+        color: #A02279;
+        background: white;
+        border: 1px solid #A02279;
+    }
+    header .connect-wallet[data-visible='true'] {
+        top: 40%;
+        bottom: 60%;
+    }
+    header .connect-wallet .cw {
+        background-color: white;
+        width: 35vw;
+        height: unset;
+        min-width: 293px;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+    .hero .hero-top .mobile-hero-img{
+        width: 90%;
+        display: grid;
+        grid-template-rows: 53% 50%;
+    }
+    .hero .hero-top .mobile-hero-img .row1{
+        display: grid;
+        grid-template-columns: 50% 58%;
+    }
+    .hero .hero-top .mobile-hero-img .row2{
+        display: grid;
+        grid-template-columns: 66% 42%;
+    }
+    .hero .hero-top .mobile-hero-img #hero-img1{
+        width: 96%;
+        height: 176px;
+        border-radius: 15px;
+    }
+    .hero .hero-top .mobile-hero-img #hero-img2{
+        width: 100%;       
+        height: 176px;
+        border-radius: 15px;
+
+    }
+    .hero .hero-top .mobile-hero-img #hero-img3{
+        width: 96%;
+        border-radius: 15px;
+
+       height: 176px;
+    }
+    .hero .hero-top .mobile-hero-img #hero-img4{
+        border-radius: 15px;
+
+        width: 100%;
+       height: 176px;
+    }
+    .hero .hero-top #hero-img{
+        display: none;
+    
+    }
+    .hero .hero-top{
+        padding: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: auto;
+    
+    }
+    .hero .hero-top .hero-txt{
+        padding-right: 0;
+        height: auto;
+
+    }
+    .hero .hero-top .hero-txt h1 {
+
+        letter-spacing:normal;
+
+         width: auto;
+
+    }
+    .hero .hero-top .hero-txt p {
+
+        width: auto; 
+        height: auto;
+
+    }
+    .hero .hero-top .search{
+        display: flex;
+        width: 90%;
+        
+    
+    }
+    .hero .hero-top .search input {
+        Width: 100%;
+        
+ 
+    }
+    .hero .hero-top .search button {
+        width: 50%;
+
+    }
+    .hero .hero-bottom {
+        width: unset;
+        gap: 5%;
+    }
+    
+    .hero .hero-bottom .mbt-img{
+        width: 80%;
+        height: auto;
+    }
+    .hero .hero-bottom .metamask-img{
+        width: 80%;
+        height: auto;
+    }
+    .hero .hero-bottom .opensea-img{
+        width: 80%;
+        height: auto;
+    
+    }
+    #learn-more-section {
+        overflow-x: hidden;
+        margin-top: 60px;
+        background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 26%;
+        height: 774px;
+        position: relative;
+    }
+    .nft-list-section .list-body {
+        align-items: center;
+    }
+    
+    .nft-list-section .list-body .filter-nav {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+    .nft-list-section .list-body .filter-nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        list-style: none;
+        gap: 2em;
+        margin-right: 0;
+        padding-left: 0;
+    }
+   
+ }
+
+ @media screen and (max-width: 1000px){
+    header nav{
+        margin-top: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        padding: 1em 2.5em 0 2em;
+
+    }
+    header nav .menu{
+        display: block;
+        width: 1.5em;
+        cursor: pointer;
+    }
+    
+    header nav .menu:hover path{
+        fill: #A02279;
+    }
+    header nav .menu-close{
+        display: block;
+        cursor: pointer;
+        position: fixed;
+        right: 0;
+        padding-right: 1.9em;
+        width: 1.5em;
+        z-index: 100000000;
+    }
+    header nav .menu-close-hide{
+        display: none;
+        
+    }
+    header nav svg:hover path{
+        fill:#A02279;
+    }
+    header nav .nav-link-default{
+        visibility: hidden;
+        position: fixed;
+        transform: translateX(100%);
+        flex-direction: column;
+        z-index: 1000000;
+        padding: 55px  25px 0  30px;
+        top: 0;
+        right: 0;
+        background-color: #ffffff;
+        box-shadow: 1px 1px 1px 1px gray;
+        width: 40vw;
+        height: 100vh;
+        transition: transform 350ms ease-in-out, visibility 350ms ease-in;
+
+    }
+    header nav .nav-link-default[data-visible='true']{
+        visibility: visible;
+
+        transform: translateX(0%);
+       ;
+    }
+    header nav ul{
+        
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        gap:48px ;
+        padding: 0;
+        padding-left:0 ;
+        padding-right: 0px;
+        padding-bottom: 1em;
+    }
+    header nav ul li{
+        color: #434343;
+        height: 25px;
+        
+        font-family: 'Red Rose';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        cursor: pointer;
+        
+    }
+    header nav ul li a{
+        
+        text-decoration: none;
+        color: #434343;
+    
+    }
+    header nav ul li a:hover{
+       color: #A02279;
+        
+    }
+      header nav ul .home{
+        width: 57px;
+    
+    }
+    header nav ul .pts{
+        width: 125px;
+    
+    }
+    header nav ul .nftlink{
+        width: 52px;
+    
+    }
+    header nav ul .comm{
+        width: 111px;
+    }  
+    header nav button{
+        background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+        border-radius: 10px;
+        border: none;
+        font-family: 'Red Rose';
+        width: 175px;
+        height: 48px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: white;
+        gap: 10px;
+    }
+    header nav button:hover{
+        cursor: pointer;
+        color: #A02279;
+        background: white;
+        border: 1px solid #A02279;
+    }
+    .hero .hero-top .mobile-hero-img{
+        width: 90%;
+        display: grid;
+        grid-template-rows: 53% 50%;
+    }
+    .hero .hero-top .mobile-hero-img .row1{
+        display: grid;
+        grid-template-columns: 50% 58%;
+    }
+    .hero .hero-top .mobile-hero-img .row2{
+        display: grid;
+        grid-template-columns: 66% 42%;
+    }
+    .hero .hero-top .mobile-hero-img #hero-img1{
+        width: 96%;
+        height: 176px;
+        border-radius: 15px;
+    }
+    .hero .hero-top .mobile-hero-img #hero-img2{
+        width: 100%;       
+        height: 176px;
+        border-radius: 15px;
+
+    }
+    .hero .hero-top .mobile-hero-img #hero-img3{
+        width: 96%;
+        border-radius: 15px;
+
+       height: 176px;
+    }
+    .hero .hero-top .mobile-hero-img #hero-img4{
+        border-radius: 15px;
+
+        width: 100%;
+       height: 176px;
+    }
+    .hero .hero-top #hero-img{
+        display: none;
+    
+    }
+    .hero .hero-top{
+        padding: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: auto;
+    
+    }
+    .hero .hero-top .hero-txt{
+        padding-right: 0;
+        height: auto;
+
+    }
+    .hero .hero-top .hero-txt h1 {
+
+        letter-spacing:normal;
+
+         width: auto;
+
+    }
+    .hero .hero-top .hero-txt p {
+
+        width: auto; 
+        height: auto;
+
+    }
+    .hero .hero-top .search{
+        display: flex;
+        width: 90%;
+        
+    
+    }
+    .hero .hero-top .search input {
+        Width: 100%;
+        
+ 
+    }
+    .hero .hero-top .search button {
+        width: 50%;
+
+    }
+    .hero .hero-bottom {
+        width: unset;
+        gap: 5%;
+    }
+    
+    .hero .hero-bottom .mbt-img{
+        width: 80%;
+        height: auto;
+    }
+    .hero .hero-bottom .metamask-img{
+        width: 80%;
+        height: auto;
+    }
+    .hero .hero-bottom .opensea-img{
+        width: 80%;
+        height: auto;
+    
+    }
+    
+    
+
+.nft-section .nft {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 5%;
+}
+.nft-section .nft .card {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+     height: unset;
+    position: relative;
+    min-width: 175px;
+}
+
+.nft-section .nft .nft-card .image .heart {
+    position: absolute;
+    top: 8px;
+    left: unset;
+    right: 8px;
+}
+.nft-section .nft .nft-card .image img {
+    width: 100%;
+    height: unset;
+    border-radius: 15px;
+}
+
+/* nft list place to stay */
+.nft-list-section .list-body .filter-nav{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-bottom: 55px;
+}
+.nft-list-section .list-body .filter-nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 60%;
+    gap: 1.5em;
+    background-color: white;
+}
+
+.nft-list-section .list-body  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 5%;
+}
+.nft-list-section .list-body  .cards .card {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    height: unset;
+    position: relative;
+    min-width: 175px;
+}
+.nft-list-section .list-body  .cards .card .nft-card{
+   
+}
+
+.nft-list-section .list-body  .cards .nft-card .image .heart {
+    position: absolute;
+    top: 8px;
+    left: unset;
+    right: 8px;
+}
+.nft-list-section .list-body .cards .card .nft-card .image img {
+    width: 100%;
+    height: unset;
+    border-radius: 15px;
+}
+/* nft list place to stay */
+     #learn-more-section {
+        overflow-x: hidden;
+        margin-top: 60px;
+        background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        gap: 100px;
+        height: unset;
+        position: relative;
+        padding: 32px;
+    }
+    
+    
+   
+    #learn-more-section .intersecting-img {
+        /* position: unset; */
+        /* top: 200px; */
+        left: -100px;
+        /* scale: 0%; */
+        transform: scale(65%);
+    }
+    
+    #learn-more-section .intersecting-img .im1 {
+        display: block;
+    
+    }
+    #learn-more-section .intersecting-img .im2 {
+        
+        width: 378.2px;
+        height: 258.89px;
+        border-radius: 10px;
+        /* z-index: 500; */
+    }
+    #learn-more-section .intersecting-img .im3 {
+       
+        /* top: -15em; */
+        /* right: -7em; */
+        border-radius: 10px;
+        z-index: 0;
+    }
+    #learn-more-section .txt {
+        margin-top: 0;
+        margin-left: 0;
+        margin-bottom: 2em;
+        text-align: left;
+        position: unset;
+        /* top: 50%; */
+        /* bottom: 10%; */
+    }
+    #learn-more-section .txt p {
+        margin-top: 0;
+        text-align: left;
+        font-family: 'Red Rose';
+        /* height: 136px; */
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 35px;
+        background: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    } 
+    footer{
+        display: flex;
+    padding: 32px;
+    gap: 3em;
+    flex-wrap: wrap;
+}
+    
+ }
+
+ @media screen and (max-width: 557px){
+    .nft-section .nft .card {
+        display: flex;
+        justify-content: center;
+        width: unset;
+        height: unset;
+        position: relative;
+        min-width: 175px;
+    }
+    .nft-list-section .list-body .cards .card {
+        display: flex;
+        justify-content: center;
+        width: unset;
+        height: unset;
+        position: relative;
+        min-width: 175px;
+    }
+    #learn-more-section {
+        flex-direction: column;
+      
+    }
+    #learn-more-section .intersecting-img {
+        /* position: unset; */
+        top: 100px;
+        left: 60px;
+        /* scale: 0%; */
+        transform: scale(45%);
+    }
+    #learn-more-section .txt{
+        padding: 32px;
+
+    }
+    
+#learn-more-section .txt h4 {
+     width: unset; 
+
+}
+#learn-more-section .txt p {
+     height: unset; 
+     width: unset;
+
+}
+.nft-list-section .list-body .filter-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column-reverse;
+    margin-bottom: 55px;
+}
+.nft-list-section .list-body .filter-nav ul {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+ }
