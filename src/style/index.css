@@ -519,6 +519,21 @@ border-radius: 8px 0px 0px 8px;
             border: 1px solid #B4B4B4;
             border-radius: 8px;
         }
+        .nft-list-section .list-body .filter-nav .location:hover{
+            cursor: pointer;
+            background-color: #A02279;
+            border: none;
+        }
+        .nft-list-section .list-body .filter-nav .location:hover span{
+            color: #F7F7F7;
+        }
+        .nft-list-section .list-body .filter-nav .location:hover svg path{
+            fill: #F7F7F7;
+            stroke: #F7F7F7;
+        }
+        .nft-list-section .list-body .filter-nav .location:hover svg {
+            fill: #F7F7F7;
+        }
 
 
 
@@ -1527,3 +1542,62 @@ border-radius: 8px 0px 0px 8px;
     justify-content: center;
 }
  }
+ @media screen and (max-width: 400px){
+    header nav .logo #logo {
+        width: 156px;
+    }
+    header nav button {
+
+        width: 140px;
+  
+    }
+    .hero .hero-top {
+      
+        height: auto;
+        gap: 3em;
+    }
+    .hero .hero-top .mobile-hero-img #hero-img1 {
+        height: 133.425px;
+        width: 96%;
+    }
+    .hero .hero-top .mobile-hero-img #hero-img2 {
+        height: 133.425px;
+        width: 96%;
+    }
+    .hero .hero-top .mobile-hero-img #hero-img3 {
+        height: 133.425px;
+        width: 96%;
+    }
+    .hero .hero-top .mobile-hero-img #hero-img4 {
+        height: 133.425px;
+        width: 96%;
+    }
+    .hero .hero-top .hero-txt {
+        
+        gap: 35px;
+    }
+    .hero .hero-top .hero-txt h1 {
+        
+        width: auto;
+        font-weight: 400;
+        font-size: 2.1rem;
+        line-height: 123%;
+    }
+    .hero .hero-top .hero-txt p {
+
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 32px;
+        width: auto;
+        height: auto;
+    }
+    .nft-list-section .list-body .cards .card {
+       
+        height: 372px;
+    }
+    .nft-list-section .list-body .cards .card .nft-card .image img {
+        height: 265px;
+    }
+
+ }
+
